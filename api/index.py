@@ -6,7 +6,7 @@ from api.chatgpt import ChatGPT
 
 import os
 
-line_bot_api = LineBotApi(os.getenv("LINE_CHANNEL_ACCESS_TOKEN"))
+line_bot_api = LineBotApi(os.getenv("KBK2wmLpEcc/FwcDofuM5yVGEiNvJaF+LQtowZ5U/oA+DI39NgCiLk9j93aa2mb3wVszsZOLKOgfsIj63O8+6sNMy6Bd2D6FEw3PPrxaW0+w+Jetd3Gaq5fN/I3OE9Yr5qy5CGiG3brH9hG4q+MuIwdB04t89/1O/w1cDnyilFU="))
 line_handler = WebhookHandler(os.getenv("LINE_CHANNEL_SECRET"))
 working_status = os.getenv("DEFALUT_TALKING", default = "true").lower() == "true"
 
