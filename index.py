@@ -37,7 +37,7 @@ def callback():
 def handle_message(event):
     global working_status
        
-    working_status=true
+    working_status == true
     
     if working_status:
         chatgpt.add_msg(f"Human:{event.message.text}?\n")
